@@ -15,7 +15,7 @@ export default function Calculator() {
         }
         setCalc(calc + value);
         if (!ops.includes(value)) {
-            setResult((calc + value).toString());
+            setResult(eval(calc + value).toString());
         }
     };
 
@@ -38,11 +38,12 @@ export default function Calculator() {
     };
 
     const calculate = () => {
-        setCalc((calc).toString());
+        setCalc(eval(calc).toString());
     };
     const deleteLast = () => {
         if (calc == "") return;
-        setCalc(calc.slice(0, -1));
+        const value = calc.slice(0, -1);
+        setCalc(value);
         setResult(result.slice(0, -1))
     }
     const deleteAll = () => {
