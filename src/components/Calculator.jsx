@@ -46,8 +46,8 @@ export default function Calculator() {
         setResult(result.slice(0, -1))
     }
     const deleteAll = () => {
-        setResult('0');
-        setCalc('0');
+        setResult('');
+        setCalc('');
     }
     return (
         <div className="calculator">
