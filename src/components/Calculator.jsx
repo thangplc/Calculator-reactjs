@@ -105,7 +105,7 @@ export default function Calculator() {
                 >
                     .
                 </button>
-                <button onClick={calculate}> = </button>
+                <button className='result' onClick={calculate}> = </button>
             </div>
         </div>
     );

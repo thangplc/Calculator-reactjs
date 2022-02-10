@@ -63,6 +63,10 @@ button:hover{
     max-width: 33.3333%;
     background-color: var(--dark);
 }
+.result:hover{
+    background-color: var(--primary);
+    color: #fff;
+}
 
 
 
